@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Doggy Survey</title>
-        <link href="/style.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
     </head>
     <body>
         <div class="navbar">
@@ -13,7 +13,32 @@
         </div>
 
         <fieldset>
+            <legend>Pet Survey</legend>
+            <div>
+                <label for="name">Pet's Name</label>
+                <input type="text" id="name" name="name">
+            </div>    
 
+            <div>
+                <label for="breed">Pet's Breed</label>
+                <input type="text" id="breed" name="breed">
+            </div> 
+
+            <div id="motivation">
+                <p>Motivated by:</p>
+                <label for="food">Food</label>
+                <input type="checkbox" id="food" name="food">
+                <label for="toys">Toys</label>
+                <input type="checkbox" id="toys" name="toys">
+                <label for="attention">Attention</label>
+                <input type="checkbox" id="attention" name="attention">
+            </div>
+
+            <div>
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" placeholder="Tell us about your pet!"></textarea>
+            </div>
+                <button type="submit">Submit</button>
         </fieldset>
     </body>
 </html>
